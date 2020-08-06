@@ -1,0 +1,51 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 6fr 4fr;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.box {
+  padding: 30px;;
+}
+
+.phone {
+  background-color: steelblue;
+}
+
+.article {
+  text-align: center;
+}
+
+.article__title {
+  color: hsl(271, 36%, 24%);
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.article__description {
+  color: hsl(270, 7%, 64%);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media(min-width: 375px) {
+  body {
+    background: red;
+  }
+}
