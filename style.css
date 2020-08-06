@@ -10,20 +10,22 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-rows: 6fr 4fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .box {
-  padding: 30px;;
+  padding: 30px;
+  position: relative;
 }
 
 .phone {
   border: 10px solid  hsl(0, 0%, 100%);
   border-radius: 30px;
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,6 +185,7 @@ body {
 
 .article {
   text-align: center;
+  align-self: center;
 }
 
 .article__title {
@@ -198,8 +201,20 @@ body {
   line-height: 1.7;
 }
 
-@media(min-width: 375px) {
-  body {
-    background: red;
+@media(min-width: 600px) {
+  
+  .main {
+    flex-direction: row;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .article {
+    max-width: 375px;
+    text-align: left;
   }
 }
