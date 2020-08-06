@@ -47,7 +47,7 @@ body {
 
 .app-header {
   background-color: slateblue;
-  background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   color: hsl(0, 0%, 100%);
@@ -94,9 +94,66 @@ body {
 }
 
 .app-body {
-  display: grid;
-  grid-template-rows: repeat(9, auto);
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.app__message {
+  display: flex;
+  font-size: 10px;
+  margin-bottom: 6px;
+  padding: 10px;
+  width: 75%;
+}
+
+.app__message--left {
+  background: hsl(272, 46%, 93%);
+  border-radius: 12px 12px 12px 0;
+  color: hsl(276, 55%, 52%);
+}
+
+.app__message--right {
+  align-self: flex-end;
+  background: hsl(0, 0%, 100%);
+  border-radius: 12px 12px 0 12px;
+  color: hsl(271, 15%, 43%);
+}
+
+.app__message--price {
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  width: 85%;
+}
+
+.app__message--circle {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 5px;
+  height: 13px;
+  width: 13px;
+}
+
+.app__message--price-total {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dogs {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
+
+.dogs__image {
+  border-radius: 8px;
+  margin-left: 5px;
+  height: 42px;
+  width: 42px;
 }
 
 .article {

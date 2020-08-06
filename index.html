@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -30,14 +30,44 @@
           </div>
 
           <div class="app-body">
-            <p>That sounds great. I’d be happy with that.</p>
-            <p>Could you send over some pictures of your dog, please?</p>
-            <div class="dogs">1 2 3</div>
-            <p>Here are a few pictures. She’s a happy girl!</p>
-            <p>Can you make it?</p>
-            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-            <p>30 minute walk $29</p>
-            <p>1 hour walk  $49</p>
+            <p class="app__message app__message--left">
+              That sounds great. I’d be happy with that.
+            </p>
+
+            <p class="app__message app__message--left">
+              Could you send over some pictures of your dog, please?
+            </p>
+
+            <div class="dogs">
+              <img class="dogs__image" src="./images/dog-image-1.jpg" alt="Dog 1">
+              <img class="dogs__image" src="./images/dog-image-2.jpg" alt="Dog 2">
+              <img class="dogs__image" src="./images/dog-image-3.jpg" alt="Dog 2">
+            </div>
+
+            <p class="app__message app__message--right">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+
+            <p class="app__message app__message--right">
+              Can you make it?
+            </p>
+
+            <p class="app__message app__message--left">
+              She looks so happy! The time we discussed works. How long shall I take her out for?
+            </p>
+
+            <p class="app__message app__message--left app__message--price">
+              <span class="app__message--circle"></span>
+              30 minute walk 
+              <span class="app__message--price-total">$29</span>
+            </p>
+
+            <p class="app__message app__message--left app__message--price">
+              <span class="app__message--circle"></span>
+              1 hour walk 
+              <span class="app__message--price-total">$49</span>
+            </p>
+
             <div class="form-control">Type a message…</div>
           </div>
         </div>
@@ -56,10 +86,5 @@
       </article>
     </div>
   </main>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
